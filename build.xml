@@ -17,7 +17,7 @@
   <target name="compile" depends="init"
         description="compile the source " >
     <!-- Compile the java code from ${src} into ${build} -->
-    <javac srcdir="${src}" destdir="${build}"/>
+    <javac srcdir="${src}" destdir="${build}" includeantruntime="true"/>
   </target>
 
   <target name="dist" depends="compile"
@@ -35,4 +35,12 @@
     <delete dir="${build}"/>
     <delete dir="${dist}"/>
   </target>
+
+<target name="run" depends="compile"
+        description="run HelloWorld.java" >
+          <java classname="HelloWorld" fork="true">
+            <classpath path="${build}"/>
+          </java>
+  </target>
+
 </project>
