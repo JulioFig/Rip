@@ -36,8 +36,15 @@
     <delete dir="${dist}"/>
   </target>
 
-<target name="run" depends="compile"
-        description="run HelloWorld.java" >
+<!-- Lists the run tasks -->
+    <target name="run">
+        <echo message="Available applications are:"/>
+        <echo message="ant run-HelloWorld - Run HelloWorld Application."/>
+        <!--echo message="run-NewApp     - Run New Application."/-->
+    </target>
+
+<target name="run-HelloWorld" depends="compile"
+        description="runs HelloWorld.java" >
           <java classname="HelloWorld" fork="true">
             <classpath path="${build}"/>
           </java>
