@@ -1,0 +1,1 @@
+This was ment to be able to crack the password on IOS 6 and below. Have not got it to work.
