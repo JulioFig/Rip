@@ -4,4 +4,6 @@
 int main()
 {
   std::cout << "Hello World!";
+  std::cout << "\n";
+  std::cout << "Goodbye World!";
 }
