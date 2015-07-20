@@ -57,6 +57,8 @@ public class SearchAndFind{
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		
+		//Set Modern UI look and feel
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException e1) {
@@ -68,6 +70,8 @@ public class SearchAndFind{
 		} catch (UnsupportedLookAndFeelException e1) {
 			e1.printStackTrace();
 		}
+		
+		//setup frame properties
 		frame = new JFrame();
 		frame.setBounds(100, 100, 809, 634);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -84,7 +88,7 @@ public class SearchAndFind{
 		
 		//Find Next Button
 		btnFindNext = new JButton("Find Next");
-		btnFindNext.setBounds(328, 52, 89, 23);
+		btnFindNext.setBounds(328, 52, 103, 23);
 		btnFindNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				System.out.println("Find Button Clicked");
@@ -131,7 +135,7 @@ public class SearchAndFind{
 		
 		// Replace With Button
 		btnNewButton = new JButton("Replace With");
-		btnNewButton.setBounds(328, 85, 89, 23);
+		btnNewButton.setBounds(328, 85, 103, 23);
 		btnNewButton.addActionListener(new ActionListener() {
 		      public void actionPerformed(ActionEvent ae) {
 		    	  System.out.println("Replace Button Clicked");
@@ -177,7 +181,7 @@ public class SearchAndFind{
 		
 		//Browse Button
 		JButton btnBro = new JButton("Browse");
-		btnBro.setBounds(328, 18, 89, 23);
+		btnBro.setBounds(328, 18, 96, 23);
 		btnBro.addActionListener(new ActionListener() {
 				      public void actionPerformed(ActionEvent ae) {
 				          JFileChooser fileChooser = new JFileChooser(".\\input");
@@ -238,11 +242,15 @@ public class SearchAndFind{
 		textArea.setRows(8);
 		
 		btnReplaceAll = new JButton("Replace All");
-		btnReplaceAll.setBounds(429, 85, 85, 23);
+		btnReplaceAll.setBounds(439, 85, 85, 23);
 		frame.getContentPane().add(btnReplaceAll);
 		
 		btnFindAll = new JButton("Find All");
-		btnFindAll.setBounds(429, 52, 67, 23);
+		btnFindAll.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		btnFindAll.setBounds(441, 52, 82, 23);
 		frame.getContentPane().add(btnFindAll);
 		
 		

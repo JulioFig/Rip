@@ -55,7 +55,7 @@
 
 <target name="run-SearchAndFind" depends="compile"
         description="runs SearchAndFind.java" >
-          <java classname="SearchAndFind" fork="true">
+          <java classname="Main" fork="true">
             <!--classpath path="${build}"/-->
             <classpath refid="build.classpath" />
           </java>
