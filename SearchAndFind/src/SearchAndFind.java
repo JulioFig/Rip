@@ -3,6 +3,7 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JButton;
+import javax.swing.UnsupportedLookAndFeelException;
 
 import org.apache.commons.io.FileUtils;
 
@@ -13,7 +14,6 @@ import javax.swing.JFileChooser;
 import javax.swing.JPanel;
 
 import java.awt.Color;
-
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
@@ -23,6 +23,7 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.DefaultHighlighter;
 import javax.swing.text.Highlighter;
 import javax.swing.JTextPane;
+import javax.swing.UIManager;
 
 
 
@@ -56,6 +57,17 @@ public class SearchAndFind{
 	 * Initialize the contents of the frame.
 	 */
 	private void initialize() {
+		try {
+			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (InstantiationException e1) {
+			e1.printStackTrace();
+		} catch (IllegalAccessException e1) {
+			e1.printStackTrace();
+		} catch (UnsupportedLookAndFeelException e1) {
+			e1.printStackTrace();
+		}
 		frame = new JFrame();
 		frame.setBounds(100, 100, 809, 634);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
