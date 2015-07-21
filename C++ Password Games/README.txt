@@ -4,9 +4,9 @@ make run command will run and compile both C++ together and out in the bin folde
 
 make clean command will remove all the .exe in the bin folder
 
+make bare command will do what make clean does and delete the bin folders
 
 coming soon;
 
 99 feature in C++
 
-make bare command will do what make clean does and delete the bin folder
