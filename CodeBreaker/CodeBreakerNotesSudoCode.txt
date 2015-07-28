@@ -1,0 +1,88 @@
+MAPA
+
+Main Class{ 
+Have a int to match every Character 
+
+}// End of Main Class
+
+//////////////////////////////////////////////////////////////////////////////
+Encryption Class {
+
+Key Word Method{
+getText from KeyWordTextField
+Take Inventery of Charters in KeyWordTextField casting it to an int(Creating a String for every character) 
+Cast Each String to an the corresponing Int from the main class
+Order the ints conseive order (add Handle for A A, Which A comes first if they both = 1?)
+Creat a number set with i elements (i= NumCharacter) 
+}// End of Key Word Method
+
+/////////////////////////////////
+
+Normal Message Method {
+
+
+}// End of Normal Message Method
+
+/////////////////////////////////
+
+Encryp Message Method{
+
+
+}// End of Encryp Message Method
+
+}// End of Encryption Class
+
+//////////////////////////////////////////////////////////////////////////////
+
+Decryption Class{
+
+
+
+
+}// End of Decryption Class
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+M   A   P  A
+01 02 03 04
+12 01 15 01       (Key Word Method)
+03 01 04 02
+
+ H   E    L   L   O  W   O  R   L   D
+01 02 03 04 05 06 07 08 09 10 11 12 
+H   E     L  L |  O  W  O  R|    L   D (random int to fill x amount of spots left) 
+03 01 04 02
+H   E   L    L           (Normal Covert)
+O  W    O  R
+L   D    A  B
+
+EWD LRB HOL LOA  (End product Out Put)
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+A   00
+B   01
+C   02
+D   03
+E   04
+F   05
+G  06
+H  07
+I   08
+J  09
+K  10
+L  11
+M  12
+N  13
+O  14
+P  15
+Q  16
+R  17
+S  18
+T  19
+U  20
+V  21
+W  22
+X  23
+Y  24
+Z  25

@@ -12,6 +12,7 @@ import java.awt.Panel;
 import javax.swing.JTextField;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 
 public class CodeBeakerGui {
@@ -71,6 +72,7 @@ public class CodeBeakerGui {
 	 */
 	private void initialize() {
 		fame = new JFrame();
+		fame.setAlwaysOnTop(true);
 		fame.setTitle("Code Breaker");
 		fame.setResizable(false);
 		fame.setBounds(100, 100, 532, 236);
@@ -89,9 +91,9 @@ public class CodeBeakerGui {
 		
 	}// End of initialize Method
 	
+	//////////////////////////////////////////////////////////////////////////////////////////////ENCRYPTION PANEL ////////////////////////////////////////////////////////////////////////////////
+	
 	private void EncryptionPanel(){
-		
-		//////////////////////////////////////////////////////////////////////////////////////////////ENCRYPTION PANEL ////////////////////////////////////////////////////////////////////////////////
 		
 		//START OF ENCRYPTION PANEL
 		EncryptionPanel = new Panel();
@@ -113,6 +115,7 @@ public class CodeBeakerGui {
 		EncryptButton.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent e) {
 		System.out.println("Encrypt Button pressed");
+		EcrptionButton();
 		}
 		});
 		EncryptButton.setActionCommand("");
@@ -141,8 +144,35 @@ public class CodeBeakerGui {
 		
 	}// End of Encryption Panel Method
 	
+	private void EcrptionButton(){
+		System.out.println("Started Ecrption Method When button Clicked(){");
+		KeyWord();
+		NormalMessage();
+		EncrptMessage();
+		
+	}// End of Ecrption Button Method
+	
+	private void KeyWord(){
+		System.out.println("Ran Key Word Method");
+		
+	}// End of Key Word Method
+	
+	private void NormalMessage(){
+		System.out.println("Ran Normal Message Method");
+		
+	}// End of Normal Message Method
+	
+	private void EncrptMessage(){
+		System.out.println("Ran Encrpt Message Method");
+		System.out.println("} // End of Encption Method");
+		System.out.println(" ");
+		System.out.println(" ");
+		
+	}// End of Encrpt Message Method
+	
+///////////////////////////////////////////////////////////////////////////////////////////// DECRYPTION PANEL ///////////////////////////////////////////////////////////////////////////////
+	
 	private void DecryptionPanel(){
-		///////////////////////////////////////////////////////////////////////////////////////////// DECRYPTION PANEL ///////////////////////////////////////////////////////////////////////////////
 		
 		// START OF DECRYPTION PANEL
 		DecryptionPanel = new Panel();
@@ -164,6 +194,7 @@ public class CodeBeakerGui {
 		DecryptButton.addActionListener(new ActionListener() {
 		public void actionPerformed(ActionEvent arg0) {
 		System.out.println("Decrypt Button pressed");
+		DecryptButton();
 		}
 		});
 		DecryptButton.setBounds(438, 10, 70, 22);
@@ -176,6 +207,8 @@ public class CodeBeakerGui {
 		
 		// Decrypt Message Text Field
 		DecryptMessageTextField = new JTextField();
+		DecryptMessageTextField.setHorizontalAlignment(SwingConstants.CENTER);
+		DecryptMessageTextField.setColumns(3);
 		DecryptMessageTextField.setBounds(10, 57, 498, 63);
 		DecryptionPanel.add(DecryptMessageTextField);
 		
@@ -190,5 +223,31 @@ public class CodeBeakerGui {
 		DecryptionPanel.add(KeyWordIsTextField);
 		
 	}//End of Decryption Panel Method
+	
+	private void DecryptButton(){
+		System.out.println("Started Decryption Method When button Clicked(){");
+		EncryptedMessage();
+		DecryptMessage();
+		KeyWordOutput();
+		
+	}// End of Decryption Method 
+	
+	private void EncryptedMessage(){
+		System.out.println("Ran Encrypted Message Method");
+		
+	}// End of Encrypted Message Method 
+	
+	private void DecryptMessage(){
+		System.out.println("Ran Decrypt Message Method");
+		
+	}// End of Decrypt Message Method 
+	
+	private void KeyWordOutput(){
+		System.out.println("Ran Key Word Output Method");
+		System.out.println("} // End of Decryption Method");
+		System.out.println(" ");
+		System.out.println(" ");
+		
+	}// End of Key Word Output Method 
 	
 }// End of Class
