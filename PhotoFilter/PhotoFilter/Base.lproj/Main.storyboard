@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoFilter" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_9250.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="sEY-nP-ccp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-gb-Rga">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Photo Filter" id="CrO-Gf-yfD"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sEY-nP-ccp" secondAttribute="trailing" id="0Ko-cB-FbY"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Pt-4k-CHw"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="trailing" secondItem="OvL-gb-Rga" secondAttribute="trailing" id="WKo-Oq-Cim"/>
+                            <constraint firstAttribute="bottom" secondItem="sEY-nP-ccp" secondAttribute="bottom" id="YfR-6z-hRT"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="OvL-gb-Rga" secondAttribute="leading" id="a4m-hj-oDZ"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="OvL-gb-Rga" secondAttribute="top" id="gu9-wg-3JC"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hzu-lm-gWM"/>
+                        </constraints>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="eU9-Zw-b1v"/>
+                        <barButtonItem title="Apply Filter" id="vtM-m8-dX6">
+                            <connections>
+                                <action selector="ApplyFilter:" destination="BYZ-38-t0r" id="c73-QC-Zfi"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="c1K-vz-P17"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="PhotoImageView" destination="sEY-nP-ccp" id="Bel-7R-ERw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="27" y="-234"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_9250.JPG" width="3264" height="2448"/>
+    </resources>
 </document>

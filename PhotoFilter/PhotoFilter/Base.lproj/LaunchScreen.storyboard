@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,13 +17,67 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H1C-W5-BxE">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Photo Filter" id="2oN-Ms-sCL"/>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="tc5-cc-ast">
+                                <rect key="frame" x="7" y="24" width="3264" height="556"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="IMG_9250.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="WMB-cC-XRv">
+                                        <rect key="frame" x="0.0" y="0.0" width="3264" height="556"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="556" id="J8h-6V-TYD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-TS-Ysx">
+                                        <rect key="frame" x="136" y="68" width="3264" height="556"/>
+                                        <variation key="heightClass=regular-widthClass=regular" ambiguous="YES" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="556" width="3264" height="0.0"/>
+                                        </variation>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WMB-cC-XRv" secondAttribute="trailing" id="0S4-UX-USx"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="top" secondItem="tc5-cc-ast" secondAttribute="top" id="4UC-5U-2gc"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="leading" secondItem="tc5-cc-ast" secondAttribute="leading" id="7v8-pl-6GW"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="top" secondItem="tc5-cc-ast" secondAttribute="top" id="8LG-U4-zCT"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="leading" secondItem="tc5-cc-ast" secondAttribute="leadingMargin" id="8oe-G2-8MF"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="trailing" secondItem="tc5-cc-ast" secondAttribute="trailingMargin" id="8zY-v5-aYL"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="top" secondItem="tc5-cc-ast" secondAttribute="top" id="EVe-dK-cb3"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="centerY" secondItem="tc5-cc-ast" secondAttribute="centerY" id="EuH-Lx-1mp"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="bottom" secondItem="tc5-cc-ast" secondAttribute="bottomMargin" id="Nd6-vh-Ujq"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="top" secondItem="tc5-cc-ast" secondAttribute="top" id="Whh-A2-n6P"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="centerX" secondItem="tc5-cc-ast" secondAttribute="centerX" id="aDh-NA-MeQ"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="leading" secondItem="tc5-cc-ast" secondAttribute="leading" id="lmi-pT-rhO"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="top" secondItem="tc5-cc-ast" secondAttribute="topMargin" id="nYk-3q-8Ug"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="leading" secondItem="tc5-cc-ast" secondAttribute="leading" id="pxH-bn-fpw"/>
+                                    <constraint firstAttribute="bottom" secondItem="WMB-cC-XRv" secondAttribute="bottom" id="sPy-Ua-rPI"/>
+                                    <constraint firstAttribute="bottom" secondItem="WMB-cC-XRv" secondAttribute="bottom" id="sq1-c0-ICd"/>
+                                    <constraint firstItem="WMB-cC-XRv" firstAttribute="leading" secondItem="tc5-cc-ast" secondAttribute="leading" id="u0M-2n-oI0"/>
+                                    <constraint firstAttribute="trailing" secondItem="WMB-cC-XRv" secondAttribute="trailing" id="vCg-R2-mQB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="IoC-Ad-ePf"/>
+                        <barButtonItem title="Apply Filter" id="GRA-yR-jwZ"/>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="DoX-HD-T57"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="126" y="-548.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_9250.JPG" width="3264" height="2448"/>
+    </resources>
 </document>
