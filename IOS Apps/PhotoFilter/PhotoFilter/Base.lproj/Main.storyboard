@@ -17,25 +17,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_9250.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="sEY-nP-ccp">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OvL-gb-Rga">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <items>
                                     <navigationItem title="Photo Filter" id="CrO-Gf-yfD"/>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_0001.png" translatesAutoresizingMaskIntoConstraints="NO" id="sEY-nP-ccp">
+                                <rect key="frame" x="0.0" y="50" width="600" height="600"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="sEY-nP-ccp" secondAttribute="trailing" id="0Ko-cB-FbY"/>
-                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4Pt-4k-CHw"/>
-                            <constraint firstItem="sEY-nP-ccp" firstAttribute="trailing" secondItem="OvL-gb-Rga" secondAttribute="trailing" id="WKo-Oq-Cim"/>
-                            <constraint firstAttribute="bottom" secondItem="sEY-nP-ccp" secondAttribute="bottom" id="YfR-6z-hRT"/>
-                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="OvL-gb-Rga" secondAttribute="leading" id="a4m-hj-oDZ"/>
-                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="OvL-gb-Rga" secondAttribute="top" id="gu9-wg-3JC"/>
-                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hzu-lm-gWM"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0Xa-0X-cNZ"/>
+                            <constraint firstItem="OvL-gb-Rga" firstAttribute="trailing" secondItem="sEY-nP-ccp" secondAttribute="trailing" id="MLO-VA-wPy"/>
+                            <constraint firstAttribute="trailing" secondItem="OvL-gb-Rga" secondAttribute="trailing" id="OeD-sy-Bys"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="OvL-gb-Rga" secondAttribute="top" id="UYV-p5-JuW"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jxV-Jp-3LF"/>
+                            <constraint firstItem="sEY-nP-ccp" firstAttribute="leading" secondItem="OvL-gb-Rga" secondAttribute="leading" id="mIL-s3-u0e"/>
+                            <constraint firstAttribute="bottom" secondItem="sEY-nP-ccp" secondAttribute="bottom" id="rkp-tv-Nx1"/>
                         </constraints>
                     </view>
                     <toolbarItems>
@@ -54,10 +54,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="27" y="-234"/>
+            <point key="canvasLocation" x="-67" y="-98"/>
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_9250.JPG" width="3264" height="2448"/>
+        <image name="IMG_0001.png" width="1036" height="1272"/>
     </resources>
 </document>
